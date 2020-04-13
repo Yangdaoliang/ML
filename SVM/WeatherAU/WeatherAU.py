@@ -55,7 +55,6 @@ citylld["climate"] = city_climate.iloc[:, -1]
 city_climate['Climate'].head()
 
 samplecity = pd.read_csv('../data/samplecity.csv',index_col = 0)
-samplecity.head()
 
 #我们对samplecity也执行同样的处理：去掉经纬度中度数的符号，并且舍弃我们的经纬度的方向
 samplecity["Latitudenum"] = samplecity["Latitude"].apply(lambda x:float(x[:-1]))
